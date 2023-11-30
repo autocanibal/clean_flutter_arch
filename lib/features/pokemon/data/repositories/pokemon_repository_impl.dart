@@ -4,7 +4,7 @@ import '../../../../../core/connection/network_info.dart';
 import '../../../../../core/errors/exceptions.dart';
 import '../../../../../core/errors/failure.dart';
 import '../../../../core/params/params.dart';
-import '../../business/repositories/pokemon_repository.dart';
+import '../../domain/repositories/pokemon_repository.dart';
 import '../datasources/pokemon_local_data_source.dart';
 import '../datasources/pokemon_remote_data_source.dart';
 import '../models/pokemon_model.dart';

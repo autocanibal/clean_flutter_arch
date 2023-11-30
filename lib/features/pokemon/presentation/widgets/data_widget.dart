@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../../../core/constants/constants.dart';
 import '../../../../../core/errors/failure.dart';
-import '../../business/entities/pokemon_entity.dart';
+import '../../domain/entities/pokemon_entity.dart';
 import '../providers/pokemon_provider.dart';
 
 class DataWidget extends StatelessWidget {

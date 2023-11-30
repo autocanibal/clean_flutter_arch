@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../../../core/errors/failure.dart';
-import 'pokemon_image_widget.dart';
-import '../../business/entities/pokemon_entity.dart';
+import '../../../pokemon_image/presentation/widgets/pokemon_image_widget.dart';
+import '../../domain/entities/pokemon_entity.dart';
 import '../providers/pokemon_provider.dart';
 
 class PokemonWidget extends StatelessWidget {

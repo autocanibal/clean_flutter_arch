@@ -3,7 +3,7 @@ Presentation: UI & UX
     - Provider (State management)
     - Widgets
 
-Business: Security, caches, logs, exeptions, validations
+Domain: Security, caches, logs, exceptions, validations
     - entities
     - repositories
     - usecases

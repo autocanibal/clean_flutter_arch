@@ -1,13 +1,14 @@
 import 'package:data_connection_checker_tv/data_connection_checker.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mapp_clean_architecture/features/pokemon_image/presentation/providers/pokemon_image_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../../core/connection/network_info.dart';
 import '../../../../../core/errors/failure.dart';
 import '../../../../core/params/params.dart';
-import '../../business/entities/pokemon_entity.dart';
-import '../../business/usecases/get_pokemon.dart';
+import '../../domain/entities/pokemon_entity.dart';
+import '../../domain/usecases/get_pokemon.dart';
 import '../../data/datasources/pokemon_local_data_source.dart';
 import '../../data/datasources/pokemon_remote_data_source.dart';
 import '../../data/repositories/pokemon_repository_impl.dart';
@@ -23,6 +24,7 @@ class PokemonProvider extends ChangeNotifier {
 
   void eitherFailureOrPokemon({
     required String value,
+    required PokemonImageProvider pokemonImageProvider
   }) async {
     PokemonRepositoryImpl repository = PokemonRepositoryImpl(
       remoteDataSource: PokemonRemoteDataSourceImpl(dio: Dio()),
@@ -44,6 +46,7 @@ class PokemonProvider extends ChangeNotifier {
       (newPokemon) {
         pokemon = newPokemon;
         failure = null;
+        pokemonImageProvider.eitherFailureOrPokemonImage(pokemonEntity: newPokemon);
         notifyListeners();
       },
     );

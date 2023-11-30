@@ -1,6 +1,7 @@
 import 'package:data_connection_checker_tv/data_connection_checker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mapp_clean_architecture/features/pokemon_image/presentation/providers/pokemon_image_provider.dart';
 import 'dart:math';
 import 'package:provider/provider.dart';
 
@@ -10,8 +11,15 @@ import '../providers/pokemon_provider.dart';
 import '../providers/selected_pokemon_item_provider.dart';
 import 'custom_elevated_button_widget.dart';
 
-class SearchPokemonWidget extends StatelessWidget {
+class SearchPokemonWidget extends StatefulWidget {
   const SearchPokemonWidget({Key? key}) : super(key: key);
+
+  @override
+  State<SearchPokemonWidget> createState() => _SearchPokemonWidgetState();
+}
+
+class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
+  bool? shinyOther = true;
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +27,7 @@ class SearchPokemonWidget extends StatelessWidget {
         ScaffoldMessenger.of(context);
     SelectedPokemonItemProvider selectedPokemonItem =
         Provider.of<SelectedPokemonItemProvider>(context);
+
     return Padding(
       padding: const EdgeInsets.only(
         left: 20.0,
@@ -27,6 +36,16 @@ class SearchPokemonWidget extends StatelessWidget {
       ),
       child: Column(
         children: [
+          CheckboxMenuButton(
+              value: shinyOther,
+              onChanged: (newValue){
+            //print(newValue.toString());
+            setState(() {
+              shinyOther = newValue;
+            });
+          },
+              child: const Text("Click me")
+          ),
           Wrap(
             spacing: 10.0,
             runSpacing: 5.0,
@@ -111,9 +130,12 @@ class SearchPokemonWidget extends StatelessWidget {
             textColor: Colors.white,
             iconColor: Colors.white,
             callback: () async {
+              PokemonImageProvider pokemonImageProvider = Provider.of<PokemonImageProvider>(context, listen: false);
+
               Provider.of<PokemonProvider>(context, listen: false)
                   .eitherFailureOrPokemon(
                 value: (selectedPokemonItem.number + 1).toString(),
+                pokemonImageProvider: pokemonImageProvider,
               );
               if (await NetworkInfoImpl(DataConnectionChecker()).isConnected ==
                   false) {

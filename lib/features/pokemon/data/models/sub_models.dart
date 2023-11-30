@@ -1,5 +1,5 @@
 import '../../../../../core/constants/constants.dart';
-import '../../business/entities/sub_entites.dart';
+import '../../domain/entities/sub_entites.dart';
 
 //! Sprites
 class SpritesModel extends SpritesEntity {
