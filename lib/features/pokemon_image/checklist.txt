@@ -2,5 +2,5 @@
 2. Flow
     - Provider (Add required params) DONE
     - Pages (Widgets) DONE
-    - Datasources remote
-    - Provider uses
+    - Datasources remote DONE
+    - Provider uses DONE

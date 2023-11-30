@@ -19,7 +19,7 @@ class SearchPokemonWidget extends StatefulWidget {
 }
 
 class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
-  bool? shinyOther = true;
+  bool? shinyOther = false;
 
   @override
   Widget build(BuildContext context) {
@@ -36,15 +36,39 @@ class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
       ),
       child: Column(
         children: [
-          CheckboxMenuButton(
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [CheckboxMenuButton(
               value: shinyOther,
-              onChanged: (newValue){
-            //print(newValue.toString());
-            setState(() {
-              shinyOther = newValue;
-            });
-          },
-              child: const Text("Click me")
+              onChanged: (newValue) async {
+                //print(newValue.toString());
+                isShiny = newValue!;
+                setState(() {
+                  shinyOther = newValue;
+                });
+
+                PokemonImageProvider pokemonImageProvider = Provider.of<PokemonImageProvider>(context, listen: false);
+
+                Provider.of<PokemonProvider>(context, listen: false)
+                    .eitherFailureOrPokemon(
+                  value: (selectedPokemonItem.number + 1).toString(),
+                  pokemonImageProvider: pokemonImageProvider,
+                );
+                if (await NetworkInfoImpl(DataConnectionChecker()).isConnected ==
+                false) {
+                scaffoldMessengerState.clearSnackBars();
+                scaffoldMessengerState.showSnackBar(
+                const SnackBar(
+                backgroundColor: Colors.orange,
+                content: Text('No connection'),
+                showCloseIcon: true,
+                ),
+                );
+                }
+
+              },
+              child: const Text("Shiny Image")
+          ),]
           ),
           Wrap(
             spacing: 10.0,
