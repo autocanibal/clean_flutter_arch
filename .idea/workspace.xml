@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="127ac8d9-2250-4300-a0c6-886b6ad4e292" name="Changes" comment="centered widget and added checkbox">
+      <change beforePath="$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/search_pokemon_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/search_pokemon_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/pokemon_image/data/datasources/pokemon_image_remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon_image/data/datasources/pokemon_image_remote_data_source.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Monde &lt;mondzzmkhize@gmail.com&gt;" />
+        <option value="mondzzmkhize@gmail.com" />
+        <option value="monde" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YsksA1porcVJSAgeJZTukEIqFo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "ToolWindowRunning Devices.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true",
+    "com.android.tools.idea.devicemanager.tab": "Physical",
+    "com.android.tools.idea.streaming.emulator.frame.visible": "false",
+    "com.android.tools.idea.streaming.emulator.zoom.toolbar.visible": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "C:/Users/MkhizeHome/StudioProjects/clean_architecture_practice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MkhizeHome\StudioProjects\clean_architecture_practice\lib\features\pokemon_image\presentation\widgets" />
+      <recent name="C:\Users\MkhizeHome\StudioProjects\clean_architecture_practice\lib\features" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MkhizeHome\StudioProjects\clean_architecture_practice\lib\features\pokemon_image\presentation\widgets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.debugAppSamsung">
+    <configuration name="debugAppPixel" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="additionalArgs" value="--use-application-binary=build/app/outputs/flutter-apk/app-x86_64-debug.apk" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="debugAppSamsung" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="additionalArgs" value="--use-application-binary=build/app/outputs/flutter-apk/app-armeabi-v7a-debug.apk" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="releaseAppPixel" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="additionalArgs" value="--release --use-application-binary=build/app/outputs/flutter-apk/app-x86_64-release.apk" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="releaseAppSamsung" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="additionalArgs" value="--release --use-application-binary=build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flutter.main.dart" />
+      <item itemvalue="Flutter.debugAppPixel" />
+      <item itemvalue="Flutter.debugAppSamsung" />
+      <item itemvalue="Flutter.releaseAppPixel" />
+      <item itemvalue="Flutter.releaseAppSamsung" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="127ac8d9-2250-4300-a0c6-886b6ad4e292" name="Changes" comment="" />
+      <created>1701321879056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701321879056</updated>
+      <workItem from="1701357888022" duration="144000" />
+      <workItem from="1701358048730" duration="4852000" />
+    </task>
+    <task id="LOCAL-00001" summary="mi tings">
+      <created>1701347641472</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701347641472</updated>
+    </task>
+    <task id="LOCAL-00002" summary="poke_image_widget">
+      <created>1701347782040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701347782040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="centered widget and added checkbox">
+      <option name="closed" value="true" />
+      <created>1701358990542</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701358990542</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mi tings" />
+    <MESSAGE value="poke_image_widget" />
+    <MESSAGE value="centered widget and added checkbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="centered widget and added checkbox" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/providers/pokemon_image_provider.dart</url>
+          <line>44</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/widgets/pokemon_image_widget.dart</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/search_pokemon_widget.dart</url>
+          <line>52</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart</url>
+          <line>25</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/datasources/pokemon_image_remote_data_source.dart</url>
+          <line>28</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart</url>
+          <line>32</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/widgets/pokemon_image_widget.dart</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/widgets/pokemon_image_widget.dart</url>
+          <line>29</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
