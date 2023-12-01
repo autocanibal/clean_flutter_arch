@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import '../../../../../core/errors/exceptions.dart';
 import '../../../../../core/params/params.dart';
 import '../../../../core/constants/constants.dart';
@@ -24,7 +25,13 @@ class PokemonImageRemoteDataSourceImpl implements PokemonImageRemoteDataSource {
       print(directory.path);
     }
 
-    directory.deleteSync(recursive: true);
+    try{
+      directory.deleteSync(recursive: true);
+    }on FileSystemException catch (e){
+      //directory = await Directory('$directory/cleanArchFolder').create(recursive: false);
+      print("You got :${e.message} error message from ${directory.path}");
+    }
+
     final pathFile = isShiny ? '${directory.path}/${pokemonImageParams.name}_shiny.png': '${directory.path}/${pokemonImageParams.name}.png';
     final response = await dio.download(
       pokemonImageParams.imageUrl,

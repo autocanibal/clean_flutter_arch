@@ -65,7 +65,8 @@ class PokemonWidget extends StatelessWidget {
           ],
         ),
       );
-    } else if (failure != null) {
+    }
+    else if (failure != null) {
       widget = Expanded(
         child: Center(
           child: Text(
@@ -74,7 +75,8 @@ class PokemonWidget extends StatelessWidget {
           ),
         ),
       );
-    } else {
+    }
+    else {
       widget = const Expanded(
         child: Center(
           child: CircularProgressIndicator(

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dartz/dartz.dart';
 
 import '../../../../../core/connection/network_info.dart';
@@ -34,12 +36,18 @@ class PokemonImageRepositoryImpl implements PokemonImageRepository {
       } on ServerException {
         return Left(ServerFailure(errorMessage: 'This is a server exception'));
       }
+      on FileSystemException catch(e){
+        return(Left(FileSystemFailure(errorMessage: e.message)));
+      }
     } else {
       try {
         PokemonImageModel localPokemonImage = await localDataSource.getLastPokemonImage();
         return Right(localPokemonImage);
       } on CacheException {
         return Left(CacheFailure(errorMessage: 'This is a cache exception'));
+      }
+      on FileSystemException catch (e){
+        return(Left(FileSystemFailure(errorMessage: e.message)));
       }
     }
   }

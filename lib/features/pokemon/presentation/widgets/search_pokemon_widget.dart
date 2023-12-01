@@ -7,6 +7,8 @@ import 'package:provider/provider.dart';
 
 import '../../../../../core/connection/network_info.dart';
 import '../../../../../core/constants/constants.dart';
+import '../../../../core/errors/failure.dart';
+import '../../domain/entities/pokemon_entity.dart';
 import '../providers/pokemon_provider.dart';
 import '../providers/selected_pokemon_item_provider.dart';
 import 'custom_elevated_button_widget.dart';
@@ -19,7 +21,6 @@ class SearchPokemonWidget extends StatefulWidget {
 }
 
 class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
-  bool? shinyOther = false;
 
   @override
   Widget build(BuildContext context) {
@@ -40,32 +41,39 @@ class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CheckboxMenuButton(
-              value: shinyOther,
+              value: isShiny,
               onChanged: (newValue) async {
                 //print(newValue.toString());
                 isShiny = newValue!;
+                PokemonEntity? pokemonEntity = Provider.of<PokemonProvider>(context, listen: false).pokemon;
+                Failure? failure = Provider.of<PokemonProvider>(context, listen: false).failure;
+                if(pokemonEntity != null){
+                  Provider.of<PokemonImageProvider>(context, listen: false).eitherFailureOrPokemonImage(pokemonEntity: pokemonEntity);
+                  if (await NetworkInfoImpl(DataConnectionChecker()).isConnected == false) {
+                      scaffoldMessengerState.clearSnackBars();
+                      scaffoldMessengerState.showSnackBar(
+                        const SnackBar(
+                            backgroundColor: Colors.orange,
+                            content: Text('No connection'),
+                            showCloseIcon: true,
+                            ),
+                          );
+                  }
 
-                PokemonImageProvider pokemonImageProvider = Provider.of<PokemonImageProvider>(context, listen: false);
-
-                Provider.of<PokemonProvider>(context, listen: false)
-                    .eitherFailureOrPokemon(
-                  value: (selectedPokemonItem.number + 1).toString(),
-                  pokemonImageProvider: pokemonImageProvider,
-                );
-                if (await NetworkInfoImpl(DataConnectionChecker()).isConnected ==
-                false) {
-                scaffoldMessengerState.clearSnackBars();
-                scaffoldMessengerState.showSnackBar(
-                const SnackBar(
-                backgroundColor: Colors.orange,
-                content: Text('No connection'),
-                showCloseIcon: true,
-                ),
-                );
+                }
+                else if(failure != null){
+                  scaffoldMessengerState.clearSnackBars();
+                  scaffoldMessengerState.showSnackBar(
+                      const SnackBar(
+                        backgroundColor: Colors.orange,
+                        content: Text('No pokemon'),
+                        showCloseIcon: true,
+                      )
+                  );
                 }
 
                 setState(() {
-                  shinyOther = newValue;
+                  isShiny = newValue;
                 });
 
               },
