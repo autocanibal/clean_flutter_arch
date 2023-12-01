@@ -38,14 +38,12 @@ class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [CheckboxMenuButton(
+            children: [
+              CheckboxMenuButton(
               value: shinyOther,
               onChanged: (newValue) async {
                 //print(newValue.toString());
                 isShiny = newValue!;
-                setState(() {
-                  shinyOther = newValue;
-                });
 
                 PokemonImageProvider pokemonImageProvider = Provider.of<PokemonImageProvider>(context, listen: false);
 
@@ -66,9 +64,14 @@ class _SearchPokemonWidgetState extends State<SearchPokemonWidget> {
                 );
                 }
 
+                setState(() {
+                  shinyOther = newValue;
+                });
+
               },
               child: const Text("Shiny Image")
-          ),]
+          ),
+            ]
           ),
           Wrap(
             spacing: 10.0,

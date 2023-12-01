@@ -23,8 +23,9 @@ class PokemonImageRemoteDataSourceImpl implements PokemonImageRemoteDataSource {
     if (kDebugMode) {
       print(directory.path);
     }
+
     directory.deleteSync(recursive: true);
-    final pathFile = '${directory.path}/${pokemonImageParams.name}.png';
+    final pathFile = isShiny ? '${directory.path}/${pokemonImageParams.name}_shiny.png': '${directory.path}/${pokemonImageParams.name}.png';
     final response = await dio.download(
       pokemonImageParams.imageUrl,
       pathFile
