@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127ac8d9-2250-4300-a0c6-886b6ad4e292" name="Changes" comment="centered widget and added checkbox">
+    <list default="true" id="127ac8d9-2250-4300-a0c6-886b6ad4e292" name="Changes" comment="changed gitignore and fixed checkbox">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/errors/failure.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/errors/failure.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/pokemon_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/pokemon_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/search_pokemon_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/search_pokemon_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/pokemon_image/data/datasources/pokemon_image_remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon_image/data/datasources/pokemon_image_remote_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/pokemon_image/data/models/pokemon_image_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon_image/data/models/pokemon_image_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -22,6 +33,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,17 +48,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "ToolWindowRunning Devices.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.android.tools.idea.devicemanager.tab": "Physical",
     "com.android.tools.idea.streaming.emulator.frame.visible": "false",
     "com.android.tools.idea.streaming.emulator.zoom.toolbar.visible": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "C:/Users/MkhizeHome/StudioProjects/clean_architecture_practice",
     "node.js.detected.package.eslint": "true",
@@ -112,6 +127,7 @@
       <updated>1701321879056</updated>
       <workItem from="1701357888022" duration="144000" />
       <workItem from="1701358048730" duration="4852000" />
+      <workItem from="1701414551422" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="mi tings">
       <created>1701347641472</created>
@@ -135,7 +151,39 @@
       <option name="project" value="LOCAL" />
       <updated>1701358990542</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added breakpoints">
+      <option name="closed" value="true" />
+      <created>1701414790238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701414790238</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changed gitignore">
+      <option name="closed" value="true" />
+      <created>1701414897848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701414897848</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changed gitignore">
+      <option name="closed" value="true" />
+      <created>1701414913282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701414913282</updated>
+    </task>
+    <task id="LOCAL-00007" summary="changed gitignore and fixed checkbox">
+      <option name="closed" value="true" />
+      <created>1701459108148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701459108148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +204,10 @@
     <MESSAGE value="mi tings" />
     <MESSAGE value="poke_image_widget" />
     <MESSAGE value="centered widget and added checkbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="centered widget and added checkbox" />
+    <MESSAGE value="added breakpoints" />
+    <MESSAGE value="changed gitignore" />
+    <MESSAGE value="changed gitignore and fixed checkbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed gitignore and fixed checkbox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -172,23 +223,18 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/features/pokemon/presentation/widgets/search_pokemon_widget.dart</url>
-          <line>52</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart</url>
-          <line>25</line>
+          <line>27</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/datasources/pokemon_image_remote_data_source.dart</url>
-          <line>28</line>
+          <line>35</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
@@ -200,6 +246,26 @@
           <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/widgets/pokemon_image_widget.dart</url>
           <line>29</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart</url>
+          <line>29</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/data/repositories/pokemon_image_repository_impl.dart</url>
+          <line>39</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/providers/pokemon_image_provider.dart</url>
+          <line>33</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/pokemon_image/presentation/providers/pokemon_image_provider.dart</url>
+          <line>30</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
